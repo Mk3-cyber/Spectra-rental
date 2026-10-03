@@ -1,0 +1,1 @@
+CRM Google Sheets integrado mediante Apps Script. Los CTA llevan a cotizar.html; Publicidad monta el formulario en #pauta. No se guardan documentos en almacenamiento del navegador. La atribución de sesión contiene únicamente rutas y UTM. Endpoint público de recepción; hoja privada.

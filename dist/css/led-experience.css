@@ -1,0 +1,92 @@
+/* LED components, scoped to the updated landing and product pages. */
+body[data-page="home"], body[data-page="led"] { --container: min(1180px, calc(100% - 48px)); }
+.led-section { padding-block: clamp(4.5rem, 8vw, 7.5rem); }
+.led-hero { position: relative; isolation: isolate; min-height: 740px; display: grid; align-items: center; background: #000; }
+.led-hero-photo { position: absolute; inset: 0; z-index: -2; overflow: hidden; }
+.led-hero-photo img { width: 100%; height: 100%; object-fit: cover; object-position: 65% 48%; }
+.led-hero::before { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(90deg,rgba(0,0,0,.94),rgba(0,0,0,.78) 43%,rgba(0,0,0,.14) 85%),linear-gradient(0deg,#000,transparent 27%); }
+.led-hero-inner { padding-block: clamp(5rem, 8vw, 8rem); }
+.led-hero h1 { font-size: clamp(2.35rem, 5.3vw, 4.6rem); max-width: 18ch; line-height: 1.07; letter-spacing: -.045em; text-wrap: balance; overflow-wrap: normal; }
+.led-hero h1 .gradient-text { display: inline-block; }
+.led-hero-copy { color: #eeeeF4; max-width: 660px; font-size: clamp(1rem,1.3vw,1.1rem); line-height: 1.7; margin-block: 1.75rem 2rem; }
+.led-hero .gradient-text, .led-heading .gradient-text, .led-cta-panel .gradient-text { background-image: linear-gradient(100deg,#74b6ff,#b18aff); }
+.led-hero .btn--primary, .led-final-cta .btn--primary { background: linear-gradient(120deg,#005fc7,var(--purple)); }
+.led-hero .btn--ghost { background: rgba(0,0,0,.48); border-color: rgba(255,255,255,.4); }
+.led-hero-meta { display: flex; flex-wrap: wrap; gap: .65rem 1.3rem; margin-top: 2.75rem; color: #c5c5ce; font-size: .875rem; }
+.led-hero-meta span + span { border-left: 1px solid #696973; padding-left: 1.3rem; }
+.led-hero-caption { position: absolute; bottom: 1rem; right: max(24px, calc((100% - 1180px) / 2)); font-size: .75rem; color: #c5c5ce; padding: .25rem .5rem; background: #000b; }
+.led-heading { display: grid; gap: 1.25rem; margin-bottom: 2.75rem; }
+.led-heading .eyebrow, .led-cta-panel .eyebrow { margin: 0; }
+.led-heading h2, .led-cta-panel h2 { font-size: clamp(2rem,4vw,3.45rem); line-height: 1.12; letter-spacing: -.035em; text-wrap: balance; }
+.led-heading > p:not(.eyebrow) { max-width: 780px; color: var(--muted); font-size: 1.0625rem; line-height: 1.7; }
+.led-heading--compact h2 { font-size: clamp(1.8rem,3vw,2.65rem); }
+.led-capabilities { padding-bottom: clamp(4rem,6vw,6rem); }
+.led-capabilities-grid, .led-solutions-grid { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); gap: 1.15rem; align-items: stretch; }
+.led-solutions-grid { grid-template-columns: repeat(3,minmax(0,1fr)); }
+.led-card { min-width: 0; border: 1px solid var(--border); border-radius: 18px; background: #0a0a0d; overflow: hidden; transition: transform .25s ease,border-color .25s ease,box-shadow .25s ease; }
+.led-card:hover { transform: translateY(-3px); border-color: #007bff80; box-shadow: 0 12px 36px #007bff0d; }
+.led-photo { position: relative; aspect-ratio: 16/9; background: #101014; overflow: hidden; }
+.led-photo img { width: 100%; height: 100%; object-fit: cover; filter: brightness(.94); transition: transform .3s ease; }
+.led-photo figcaption { position: absolute; bottom: .6rem; left: .6rem; margin: 0; padding: .2rem .45rem; background: rgba(0,0,0,.82); color: #e0e0e7; font-size: .75rem; line-height: 1.5; }
+.led-card-content { padding: 1.4rem; display: grid; align-content: start; gap: .85rem; }
+.led-card h3 { font-size: 1.25rem; line-height: 1.24; letter-spacing: -.02em; text-transform: none; }
+.led-capabilities-grid h3 { min-height: 2.5em; display: flex; align-items: center; }
+.led-card p { color: #c5c5ce; font-size: 1rem; line-height: 1.65; }
+.led-solutions { border-block: 1px solid var(--border); background: linear-gradient(180deg,#0a0a0d,#000); }
+.led-solution { scroll-margin-top: 7rem; }
+.led-solution .led-photo { aspect-ratio: 4/3; }
+.led-solution#modulares .led-photo img { object-position: center 30%; }
+.led-capabilities-grid .led-card:last-child .led-photo img { object-position: center 75%; }
+.led-solution h3 { font-size: 1.45rem; min-height: 2.5em; display: flex; align-items: center; }
+.led-reference-note { margin-top: 1.5rem; color: #aaaab5; font-size: .875rem; max-width: 85ch; }
+.led-process-grid { padding: 0; margin: 0; list-style: none; display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); gap: 1.4rem; }
+.led-process-grid li { min-width: 0; border-top: 1px solid #007bff80; padding-top: 1.25rem; }
+.led-step-number { font-family: Montserrat,sans-serif; font-size: 2.7rem; color: #78b8ff; font-weight: 800; line-height: 1; display: block; margin-bottom: 1.5rem; }
+.led-process-grid h3 { font-size: 1.25rem; line-height: 1.3; letter-spacing: -.02em; min-height: 2.6em; text-transform: none; }
+.led-process-grid p { color: var(--muted); margin-top: .75rem; }
+.led-service-note { margin-top: 2.75rem; padding: 1.5rem 1.75rem; border-left: 2px solid var(--blue); background: #0a0a0d; display: grid; gap: .8rem; color: var(--muted); }
+.led-service-note strong { color: #fff; }
+.led-service-note p:last-child { font-size: .875rem; }
+.led-final-cta { border-top: 1px solid var(--border); }
+.led-cta-panel { position: relative; padding: clamp(1.5rem,5vw,4rem); border: 1px solid #007bff50; border-radius: 18px; background: linear-gradient(120deg,#007bff16,#7b2eff16); display: grid; gap: 1.5rem; }
+.led-cta-panel h2 { max-width: 27ch; font-size: clamp(1.75rem,3.6vw,3.2rem); }
+.led-cta-panel > p:not(.eyebrow) { max-width: 700px; color: var(--muted); line-height: 1.7; }
+.led-hero .btn:focus-visible, .led-final-cta .btn:focus-visible { outline: 3px solid #bdddff; outline-offset: 5px; }
+@media (min-width:1101px) { .led-capabilities-grid .led-card-content { padding: 1.25rem; } }
+@media (max-width:1100px) {
+  .led-capabilities-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
+  .led-solutions-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
+  .led-process-grid { grid-template-columns: repeat(2,minmax(0,1fr)); gap: 2rem; }
+  .led-hero { min-height: 680px; }
+  .led-hero h1 { font-size: clamp(2.5rem,6vw,4rem); }
+  .led-hero-copy { max-width: 620px; }
+}
+@media (max-width:680px) {
+  body[data-page="home"], body[data-page="led"] { --container: min(1180px, calc(100% - 32px)); }
+  .led-hero { min-height: auto; }
+  .led-hero::before { background: linear-gradient(0deg,#000 4%,rgba(0,0,0,.84) 58%,rgba(0,0,0,.48)); }
+  .led-hero-photo img { object-position: 66% top; }
+  .led-hero-inner { padding-top: 5rem; padding-bottom: 4rem; }
+  .led-hero h1 { font-size: clamp(2rem,8.5vw,3.3rem); line-height: 1.1; letter-spacing: -.045em; }
+  .led-hero .eyebrow { font-size: .875rem; letter-spacing: .05em; }
+  .led-hero .eyebrow::before { display: none; }
+  .led-hero-copy { margin-top: 1.5rem; }
+  .led-hero-meta { margin-top: 2rem; gap: .6rem 1rem; }
+  .led-hero-meta span + span { padding-left: 1rem; }
+  .led-hero-meta span:last-child { border: 0; padding: 0; width: 100%; }
+  .led-hero-caption { right: 16px; }
+  .led-section { padding-block: 4.5rem; }
+  .led-capabilities-grid, .led-solutions-grid, .led-process-grid { grid-template-columns: minmax(0,1fr); }
+  .led-heading h2 { font-size: clamp(1.75rem,7.4vw,2.5rem); }
+  .led-heading { margin-bottom: 2rem; }
+  .led-card h3, .led-process-grid h3 { min-height: 0; }
+  .led-solution .led-photo { aspect-ratio: 16/9; }
+  .led-process-grid li { border-top: 0; border-left: 1px solid #007bff80; padding: 0 0 0 1.25rem; }
+  .led-step-number { font-size: 2.2rem; margin-bottom: .75rem; }
+  .led-service-note { padding: 1.25rem; }
+  .led-final-cta .btn { width: 100%; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .led-card, .led-photo img { transition: none; }
+  .led-card:hover { transform: none; }
+}

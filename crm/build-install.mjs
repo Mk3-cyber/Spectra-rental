@@ -1,0 +1,12 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import {fileURLToPath} from 'node:url';
+const root=path.dirname(fileURLToPath(import.meta.url));
+const read=name=>fs.readFileSync(path.join(root,name),'utf8');
+const schema=JSON.parse(read('schema.json'));
+const html=read('form.html').replace('/*VALIDATION*/',read('validation.js')).replace('/*CLIENT*/',read('client.js'));
+const code=`const SPREADSHEET_ID_='1ThMBWTw5mLSV-k6g2RTOT0H3kmhnQPK-pcD2rZ53Ai4';\nconst CRM_HEADERS_=${JSON.stringify(schema.headers)};\nconst FORM_HTML_=${JSON.stringify(html)};\n${read('validation.js')}\n${read('server.gs')}`;
+fs.writeFileSync(path.join(root,'Code.gs'),code);
+fs.writeFileSync(path.join(root,'form-review.html'),html.replace('<body>','<body><p class="notice">Revisión del formulario: Google Apps Script pendiente de autorizar. Esta copia no guarda solicitudes.</p>'));
+fs.writeFileSync(path.join(root,'appsscript.json'),JSON.stringify({timeZone:'America/Lima',runtimeVersion:'V8',oauthScopes:['https://www.googleapis.com/auth/spreadsheets']},null,2));
+console.log('Installer and non-submitting review generated.');

@@ -1,0 +1,1 @@
+{"name":"spectra-rental","private":true,"scripts":{"dev":"vite --config vite.config.mjs"},"devDependencies":{"vite":"^7.0.0","jsdom":"^26.0.0"}}

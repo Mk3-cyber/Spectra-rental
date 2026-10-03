@@ -1,0 +1,392 @@
+{
+  "version": 11,
+  "commit": "99900b00156f99589e0e0c42ee26e55141238dfc",
+  "original_file_count": 77,
+  "files": [
+    {
+      "source_path": ".gitignore",
+      "export_path": ".gitignore",
+      "sha256": "9fa4fdff933a6d8f094170defb1c952fbab24dd9d87ebfa1f79bb4f132eab0e8"
+    },
+    {
+      "source_path": ".openai/hosting.json",
+      "export_path": ".openai/hosting.json",
+      "sha256": "51ee9506cd79758df3c038f28481e28927a53c16f1888069b916dea659c1df92"
+    },
+    {
+      "source_path": "AUDIOVISUAL_UPDATE.md",
+      "export_path": "AUDIOVISUAL_UPDATE.md",
+      "sha256": "aa0169b490ffbeb782a60eac67475ea013e26c81445ce513966ef14402d3fd83"
+    },
+    {
+      "source_path": "COMMERCIAL_IDENTITY.md",
+      "export_path": "COMMERCIAL_IDENTITY.md",
+      "sha256": "2fba28fd8b291f48d6f9fa9c5da372a0ca1f648c6d3f4fab7e195b303672a0de"
+    },
+    {
+      "source_path": "CRM_INTEGRATION.md",
+      "export_path": "CRM_INTEGRATION.md",
+      "sha256": "856d87e58e200b1b028fd5691592dbb855fa3e3777691ad146f842623a9714a4"
+    },
+    {
+      "source_path": "LAUNCH_CHECKLIST.md",
+      "export_path": "LAUNCH_CHECKLIST.md",
+      "sha256": "9ba5f375aee776c4bc7fac2a81d0dc04d2df706081e1df8f0dcf489229709860"
+    },
+    {
+      "source_path": "LED_UPDATE.md",
+      "export_path": "LED_UPDATE.md",
+      "sha256": "21c5101221430b08529da26cb1a26a136080f0fa8724d54d8c6abd0471eb4f94"
+    },
+    {
+      "source_path": "QA-Nosotros.jpg",
+      "export_path": "QA-Nosotros.jpg",
+      "sha256": "b5d333af66c29f971515a89e8ccc0e83676c7b93fe333ac080552a9c0d9317ac"
+    },
+    {
+      "source_path": "README.md",
+      "export_path": "README.original.md",
+      "sha256": "ad77589eaa2afd1e26bf09aa65e2d55d593775156ba93b4a41aface224f26d08"
+    },
+    {
+      "source_path": "crm/appsscript.json",
+      "export_path": "crm/appsscript.json",
+      "sha256": "8e0189eb60c7ae8705b68194b56816e5bf394a53be72970992fcb5413c8e672f"
+    },
+    {
+      "source_path": "crm/build-install.mjs",
+      "export_path": "crm/build-install.mjs",
+      "sha256": "9616c710e1417126114814648b571a2c5e2132121b8ad001140811b99b2b6a2e"
+    },
+    {
+      "source_path": "crm/client.js",
+      "export_path": "crm/client.js",
+      "sha256": "d9ce8a34fd47334032ba75575d5dd7182a07deb7b106c81114af89d5f84308e2"
+    },
+    {
+      "source_path": "crm/form.html",
+      "export_path": "crm/form.html",
+      "sha256": "28e94f16c2dbc6ca3865642765eadb6da1b2eea0c14e0877c2135c7f77716089"
+    },
+    {
+      "source_path": "crm/schema.json",
+      "export_path": "crm/schema.json",
+      "sha256": "6f4c78dda69fb99bbf87ede541943a522724d1fb5b2e95807d3102c94f5ede9b"
+    },
+    {
+      "source_path": "crm/server.gs",
+      "export_path": "crm/server.gs",
+      "sha256": "17b96efe87758402f54fece9391252d1d39990b7a0d127a3848d28fc5ed7c39c"
+    },
+    {
+      "source_path": "crm/test.mjs",
+      "export_path": "crm/test.mjs",
+      "sha256": "e81a6afc3b68c3377b524a6345633e95dcad764bb0c7f2bc5ef2a8bf8fc21f64"
+    },
+    {
+      "source_path": "crm/validation.js",
+      "export_path": "crm/validation.js",
+      "sha256": "718b223a1400bbd5577ae07530d1fa286b21979fcfb4c45c9b7b103be024ce9c"
+    },
+    {
+      "source_path": "dist/assets/audiovisual/home-720.webp",
+      "export_path": "dist/assets/audiovisual/home-720.webp",
+      "sha256": "2630e378c4fc72b35b0aa681e8d7922fdfa20606a310973073f9b02120888aee"
+    },
+    {
+      "source_path": "dist/assets/audiovisual/home.webp",
+      "export_path": "dist/assets/audiovisual/home.webp",
+      "sha256": "e43deef721d76a638eecc220f519166238e7cd183c0cfee3cdd65e29e0effec2"
+    },
+    {
+      "source_path": "dist/assets/audiovisual/integrated-720.webp",
+      "export_path": "dist/assets/audiovisual/integrated-720.webp",
+      "sha256": "4d9278a1e17469d1f8fa3432775d8934315498c29b5f786368ee9eab6d32790d"
+    },
+    {
+      "source_path": "dist/assets/audiovisual/integrated.webp",
+      "export_path": "dist/assets/audiovisual/integrated.webp",
+      "sha256": "a94b784a9ae6bb7e48cfd1875fa748c10ef04c4a33027394b58f2fc6e9aa17b9"
+    },
+    {
+      "source_path": "dist/assets/audiovisual/lighting-720.webp",
+      "export_path": "dist/assets/audiovisual/lighting-720.webp",
+      "sha256": "c8d0df43e36fa25e842fa2a90c364adf604d965514036ba1146b57036d551d4f"
+    },
+    {
+      "source_path": "dist/assets/audiovisual/lighting.webp",
+      "export_path": "dist/assets/audiovisual/lighting.webp",
+      "sha256": "55dccf64d51cdb51ccaeef44554c87a5e8c8ef6866829b19f34656a6b1cde61a"
+    },
+    {
+      "source_path": "dist/assets/audiovisual/sound-720.webp",
+      "export_path": "dist/assets/audiovisual/sound-720.webp",
+      "sha256": "f19736764ba80b6414f25fc18a7e7f3f66be76702427e7eda64072f68932ad22"
+    },
+    {
+      "source_path": "dist/assets/audiovisual/sound.webp",
+      "export_path": "dist/assets/audiovisual/sound.webp",
+      "sha256": "7959423f1c49bc2164a6afa6379770e25c42ea991add226bcb4df724700550be"
+    },
+    {
+      "source_path": "dist/assets/audiovisual/sources.txt",
+      "export_path": "dist/assets/audiovisual/sources.txt",
+      "sha256": "884df380a70167ae7fc5f1af434c1d569886964a9fbb328a934cf2ffc10e5b1c"
+    },
+    {
+      "source_path": "dist/assets/brand/favicon.svg",
+      "export_path": "dist/assets/brand/favicon.svg",
+      "sha256": "6511952c737b0d4a35dc363d1e84efe91da7e5d12e93b6ac2d71b5dcc56c18f1"
+    },
+    {
+      "source_path": "dist/assets/brand/spectra-logo.png",
+      "export_path": "dist/assets/brand/spectra-logo.png",
+      "sha256": "92cf04bc11647f1bf98b15f8afbe88807cdae74173e7d6a1bf935ce1cc569e96"
+    },
+    {
+      "source_path": "dist/assets/reference/led-custom-640.webp",
+      "export_path": "dist/assets/reference/led-custom-640.webp",
+      "sha256": "4d13dc47a1bae490d11d4651ffb2af3bb719e46655cf2205dac5c4a6e41afe35"
+    },
+    {
+      "source_path": "dist/assets/reference/led-custom.webp",
+      "export_path": "dist/assets/reference/led-custom.webp",
+      "sha256": "0dc7bcffb4e6727dd07424bfd1f707a374cee74f3690df8253f98307f759d97f"
+    },
+    {
+      "source_path": "dist/assets/reference/led-festival.webp",
+      "export_path": "dist/assets/reference/led-festival.webp",
+      "sha256": "dd14b0478466bc6bf9ce0b23875d72653270a0676f647d7f9ae6ff5077c367f1"
+    },
+    {
+      "source_path": "dist/assets/reference/led-indoor-640.webp",
+      "export_path": "dist/assets/reference/led-indoor-640.webp",
+      "sha256": "f0a6201281922ec81fe98b2f13aaa88d04e8fcbc543b701f5ad5f9abcece50f5"
+    },
+    {
+      "source_path": "dist/assets/reference/led-indoor.webp",
+      "export_path": "dist/assets/reference/led-indoor.webp",
+      "sha256": "3251a474a9a1e102c19679a534f7a14c80fef0b7fa13c72fd88208ea9af16cd1"
+    },
+    {
+      "source_path": "dist/assets/reference/led-modular-640.webp",
+      "export_path": "dist/assets/reference/led-modular-640.webp",
+      "sha256": "a900e6211f9347f182347ea271786e860e881a4e71b2cd07e4b535b792994086"
+    },
+    {
+      "source_path": "dist/assets/reference/led-modular.webp",
+      "export_path": "dist/assets/reference/led-modular.webp",
+      "sha256": "ab12e5b99e579c9e7e4ac2cb7a77ab33e7e4db16040d58f456087e8d120197de"
+    },
+    {
+      "source_path": "dist/assets/reference/led-operation-640.webp",
+      "export_path": "dist/assets/reference/led-operation-640.webp",
+      "sha256": "35c9ec8ef88dc4d84f1a8b1eacf791b386a9f9acf1d4878bb274f0652ea72c48"
+    },
+    {
+      "source_path": "dist/assets/reference/led-operation.webp",
+      "export_path": "dist/assets/reference/led-operation.webp",
+      "sha256": "50e44229bea446ff8539a5a236aff845ac46821f701a9ce988b00ae99a5ba49e"
+    },
+    {
+      "source_path": "dist/assets/reference/led-outdoor-640.webp",
+      "export_path": "dist/assets/reference/led-outdoor-640.webp",
+      "sha256": "f6419074525c7a8bc9820a5d3edd992bfe4ac4249fd80755a22033490b6df3a0"
+    },
+    {
+      "source_path": "dist/assets/reference/led-outdoor.webp",
+      "export_path": "dist/assets/reference/led-outdoor.webp",
+      "sha256": "9edd8f27c8b68a14bc00f71c9c2561b27d5b442c16f70450ea4d297524e1e8d5"
+    },
+    {
+      "source_path": "dist/assets/reference/led-stage.webp",
+      "export_path": "dist/assets/reference/led-stage.webp",
+      "sha256": "3dc1a62a52404bea4fd195ee10715a8b678ca8539180dc65d3c5ce49318307c1"
+    },
+    {
+      "source_path": "dist/assets/reference/monumental.jpg",
+      "export_path": "dist/assets/reference/monumental.jpg",
+      "sha256": "09daaece0ad4f9c5c3ccd19906523d9340e54330c69f53659bd970aafd1bd29c"
+    },
+    {
+      "source_path": "dist/assets/reference/ref-0.webp",
+      "export_path": "dist/assets/reference/ref-0.webp",
+      "sha256": "aa1e50abf735b9d0ac29e2f047f0fc601c7ed92fd93978b2f2b3a345a253ba01"
+    },
+    {
+      "source_path": "dist/assets/reference/ref-1.webp",
+      "export_path": "dist/assets/reference/ref-1.webp",
+      "sha256": "2008c069f21a27458d269c0ff58b19232c952e85106bf481d9891181923eb7c1"
+    },
+    {
+      "source_path": "dist/assets/reference/ref-2.webp",
+      "export_path": "dist/assets/reference/ref-2.webp",
+      "sha256": "f855faa67d1e74f276b52d6373d9ead33ef9db9612b85c8feca26caf89d79ca1"
+    },
+    {
+      "source_path": "dist/assets/reference/ref-3.webp",
+      "export_path": "dist/assets/reference/ref-3.webp",
+      "sha256": "ef811c1894d3a9b5a5f5e3d481507511997784611c3efc412e320a76f2f5f81c"
+    },
+    {
+      "source_path": "dist/assets/reference/ref-4.webp",
+      "export_path": "dist/assets/reference/ref-4.webp",
+      "sha256": "da468f201fe8d40efaa598b6b4c2b4826af7f2a921ba35807d2823a4594693c3"
+    },
+    {
+      "source_path": "dist/assets/reference/sources.txt",
+      "export_path": "dist/assets/reference/sources.txt",
+      "sha256": "eca1166f225dec57cea045567edcc9b5cf20f10b1166868a4180397626e650bf"
+    },
+    {
+      "source_path": "dist/assets/reference/stadium-led.jpg",
+      "export_path": "dist/assets/reference/stadium-led.jpg",
+      "sha256": "04618f905cd954ad93ec65fc557957965c2d8c8f9cf2697c35c727307167d3c2"
+    },
+    {
+      "source_path": "dist/aviso-legal.html",
+      "export_path": "dist/aviso-legal.html",
+      "sha256": "68dec89c778fdf8ba804ed0091d0171be1e9e21adc78d6119b40cfe5709ba51f"
+    },
+    {
+      "source_path": "dist/contacto.html",
+      "export_path": "dist/contacto.html",
+      "sha256": "79e2143099e7561f7353ee43107defe6ef10505f4964dc0f25334352d0218a3b"
+    },
+    {
+      "source_path": "dist/cotizar.html",
+      "export_path": "dist/cotizar.html",
+      "sha256": "ec13608705fbf5ba225bcb4ee6d34241563a3a7f01b11aabd04a3a00ecfd4601"
+    },
+    {
+      "source_path": "dist/css/audiovisual.css",
+      "export_path": "dist/css/audiovisual.css",
+      "sha256": "7e117d3891cb82fc57fa3919c6b38e5b09ae00cd09fb8e6882a7eef0f1a0054f"
+    },
+    {
+      "source_path": "dist/css/led-experience.css",
+      "export_path": "dist/css/led-experience.css",
+      "sha256": "a5a1943cfbb1ca7d3a685662e9e87ab04cf24559eb321e833152e43fedde4809"
+    },
+    {
+      "source_path": "dist/css/monumental-update.css",
+      "export_path": "dist/css/monumental-update.css",
+      "sha256": "a88bac4ab03d15f68ee2c93cb91b054d59a4e8585e97fdd52fcc4c4527d038e2"
+    },
+    {
+      "source_path": "dist/css/monumental.css",
+      "export_path": "dist/css/monumental.css",
+      "sha256": "37a48c74904bd6ad23d68f454d2253cc5ac13b4122c13c58eee6d52fdcb248b7"
+    },
+    {
+      "source_path": "dist/css/styles.css",
+      "export_path": "dist/css/styles.css",
+      "sha256": "8e95e7c46735d904cee14f3717cfa858f9a902a2a062fe4def4e0dbc0628e698"
+    },
+    {
+      "source_path": "dist/eventos.html",
+      "export_path": "dist/eventos.html",
+      "sha256": "54cf9c85379ddd40a1db1ad9be05bd6830114e3004167d3d5a25a122b029fea3"
+    },
+    {
+      "source_path": "dist/iluminacion.html",
+      "export_path": "dist/iluminacion.html",
+      "sha256": "2ce115cdec3042d08d152324210c23fd9edc0dd1b42e1cbc9996f13b1339390a"
+    },
+    {
+      "source_path": "dist/index.html",
+      "export_path": "dist/index.html",
+      "sha256": "0122f17a6e8111dd3e4e547ef5063c4d186152714c8bc494af03e03611c3a8a0"
+    },
+    {
+      "source_path": "dist/js/crm-bridge.js",
+      "export_path": "dist/js/crm-bridge.js",
+      "sha256": "94d0134c6a447992ff299e140fb160880537e554aec5b8b739a34a6290351a56"
+    },
+    {
+      "source_path": "dist/js/crm-config.js",
+      "export_path": "dist/js/crm-config.js",
+      "sha256": "d08ad27697aadbb4ef09f0566cd01f421f034e7cd6ffebb7a449fb9c143554b6"
+    },
+    {
+      "source_path": "dist/js/monumental.js",
+      "export_path": "dist/js/monumental.js",
+      "sha256": "34d378e4b0e263ffec5962099838cc3ea2f2adcf0f33a36fd0c2da17b1456b7a"
+    },
+    {
+      "source_path": "dist/js/script.js",
+      "export_path": "dist/js/script.js",
+      "sha256": "28066f853464501f4db318745e0e23acc47ef6502b5fd78726f72848f382dc57"
+    },
+    {
+      "source_path": "dist/nosotros.html",
+      "export_path": "dist/nosotros.html",
+      "sha256": "4e621549299b331e9ef7f7b5dce9b63486934bb0ceadaaa52d4b0d106d54c932"
+    },
+    {
+      "source_path": "dist/pantallas-led.html",
+      "export_path": "dist/pantallas-led.html",
+      "sha256": "c116d6a9f3820ce35756e2cb1559695141a64caad81a05188fde810eb3ffbe5e"
+    },
+    {
+      "source_path": "dist/politica-privacidad.html",
+      "export_path": "dist/politica-privacidad.html",
+      "sha256": "6156feffee0bdcd1915ff5b925a8fb43527068fcbc53444f0eed91426686a760"
+    },
+    {
+      "source_path": "dist/proyectos.html",
+      "export_path": "dist/proyectos.html",
+      "sha256": "ffe26cc487db786242b1788c2251091b2cbc5fd34e5659dfc38ff94bde84abcc"
+    },
+    {
+      "source_path": "dist/publicidad-led.html",
+      "export_path": "dist/publicidad-led.html",
+      "sha256": "04e4ccfab86b22ff69e98a04f4b22f0c2b7d0f2789f16db55d6af5cc9561e785"
+    },
+    {
+      "source_path": "dist/soluciones-audiovisuales.html",
+      "export_path": "dist/soluciones-audiovisuales.html",
+      "sha256": "b963076cd49bd729e363f3f80f208fe11e8aa98082e4aaeebbda5db747099e97"
+    },
+    {
+      "source_path": "dist/sonido.html",
+      "export_path": "dist/sonido.html",
+      "sha256": "e3df3c6c34ddd330465d136a1285b93a391eba1c937a65f57a257a78203d2919"
+    },
+    {
+      "source_path": "dist/terminos-condiciones.html",
+      "export_path": "dist/terminos-condiciones.html",
+      "sha256": "038346121d593c45192593ccf38f9bf0fefcbc410f6866ce62f71e523d4d5e0f"
+    },
+    {
+      "source_path": "package-lock.json",
+      "export_path": "package-lock.json",
+      "sha256": "27615ea66b1d91e9697a91eca054755642eea0837bf7a96f202d0700ba22b807"
+    },
+    {
+      "source_path": "package.json",
+      "export_path": "package.json",
+      "sha256": "79690b7f11cf7adf88429ca22be1a28a1ca71cf1508b9edc75759556c8b9d2c6"
+    },
+    {
+      "source_path": "scripts/render-av.mjs",
+      "export_path": "scripts/render-av.mjs",
+      "sha256": "1833fc6b6300800af9eb517567c0d4d551f2194a6e13e924d4f7cced4870690c"
+    },
+    {
+      "source_path": "scripts/render-led.mjs",
+      "export_path": "scripts/render-led.mjs",
+      "sha256": "93f85db8f52b4bdf624892ebdfa44433838ee50b12c175047e2939e31b1c75a5"
+    },
+    {
+      "source_path": "verify.cjs",
+      "export_path": "verify.cjs",
+      "sha256": "3b644e5c77b02dfdbce13838dc484fb83a4e05dfe34cb46a2a17851bb22d7c6f"
+    },
+    {
+      "source_path": "vite.config.mjs",
+      "export_path": "vite.config.mjs",
+      "sha256": "f97a6a5d6022eb9cc0d91ecff4466c266e6a89334d096fd17351db6bf976d05f"
+    }
+  ]
+}

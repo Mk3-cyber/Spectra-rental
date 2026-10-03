@@ -1,0 +1,45 @@
+SPECTRA RENTAL — Fuentes de imágenes referenciales
+
+Actualización LED, 28 septiembre 2026. Fotografías descargadas y convertidas a WebP; recorte adaptable mediante CSS. No implican proyectos, inventario, personal propio ni relación comercial con las marcas o personas fotografiadas.
+led-indoor.webp — Matheus Bertelli / Pexels, escenario en recinto interior con paneles LED y cabina de DJ.
+https://www.pexels.com/photo/stage-with-dj-booth-17315442/
+Las variantes -640.webp comparten autor, fuente y licencia con su archivo principal.
+led-operation.webp — Bence Szemerey / Pexels, técnico durante el montaje de una pantalla LED.
+https://www.pexels.com/photo/unrecognizable-workman-installing-digital-screen-on-stage-7513419/
+led-modular.webp — Kier in Sight Archives / Unsplash, vista posterior de módulos LED y conexiones. Modelo fotografiado referencial; no identifica el pitch comercializado por Spectra.
+https://unsplash.com/photos/cables-and-wires-on-display-panels-3Nwt6w-KU3E
+led-outdoor.webp — Igor Starkov / Pexels, escenario y pantalla LED al aire libre de día.
+https://www.pexels.com/photo/people-gathered-in-front-of-stage-756091/
+led-custom.webp — Noland Live / Pexels, composición de pantallas en arcos sobre escenario, versión de mayor resolución.
+https://www.pexels.com/photo/35593172/
+Licencias: https://www.pexels.com/license/ y https://unsplash.com/license
+
+stadium-led.jpg — Savannah Bolton / Unsplash. Paneles publicitarios LED en tribunas de un estadio de fútbol americano; imagen referencial, no corresponde al Estadio Monumental ni al soporte comercializado. Sin modificación del archivo; encuadre responsivo CSS.
+https://unsplash.com/photos/empty-stadium-seats-with-illuminated-advertising-boards-JOV2_bt3H0A
+Licencia de uso comercial gratuito: https://unsplash.com/license
+
+Estas imágenes no representan trabajos realizados por SPECTRA RENTAL, sus clientes ni el inventario técnico de la empresa. No acreditan pixel pitch ni especificaciones de equipos.
+Se han retirado del sitio todas las fotografías de eventos aportadas anteriormente por el cliente. Se preserva la identidad de marca.
+
+Pexels — licencia: https://www.pexels.com/license/
+ref-0.webp — Matheus Bertelli, conferencia con pantalla de proyección. https://www.pexels.com/photo/29708259/
+ref-1.webp — Noland Live, escenario de concierto. https://www.pexels.com/photo/35593172/
+ref-2.webp — Matheus Bertelli, salón de eventos. https://www.pexels.com/photo/17056964/
+ref-3.webp — Matheus Bertelli, recepción social. https://www.pexels.com/photo/16120263/
+ref-4.webp — Caleb Oquendo, control audiovisual. https://www.pexels.com/photo/11258766/
+
+Unsplash — licencia: https://unsplash.com/license
+led-stage.webp — Max Raber, equipos y montaje de escenario.
+https://unsplash.com/photos/a-stage-with-a-screen-and-a-stage-with-lights-j9NiyytsJ7I
+led-festival.webp — Daniel Lincoln, escenario con pantallas.
+https://unsplash.com/photos/a-stage-with-a-large-screen-and-a-crowd-of-people-3-Z20Q9ysdI
+Conversión local a WebP para optimización.
+
+Wikimedia Commons
+monumental.jpg — Capomo81, Estadio Monumental, Lima, 2017. Fotografía histórica del recinto; no muestra una campaña contratada ni confirma el estado actual de los soportes.
+https://commons.wikimedia.org/wiki/File:Estadio_monumental_lima.jpg
+Licencia CC BY-SA 4.0: https://creativecommons.org/licenses/by-sa/4.0/
+Archivo original sin modificación; encuadre visual responsivo mediante CSS.
+
+Referencia sectorial de estructura editorial (no fuente de fotografías ni copys):
+https://www.adi.tv/stadium-solutions/digiboard-digital-perimeter

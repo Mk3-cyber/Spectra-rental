@@ -1,0 +1,7 @@
+{
+  "timeZone": "America/Lima",
+  "runtimeVersion": "V8",
+  "oauthScopes": [
+    "https://www.googleapis.com/auth/spreadsheets"
+  ]
+}
