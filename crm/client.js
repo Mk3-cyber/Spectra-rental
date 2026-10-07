@@ -1,6 +1,6 @@
 (() => {
   const $=id=>document.getElementById(id),form=$('leadForm'),steps=[...document.querySelectorAll('[data-step]')];
-  let step=0,started=false,busy=false,attribution={},requestKey=crypto.randomUUID(),snapshot=null,parentOrigin='https://spectra-rental.laguna-marioa.chatgpt.site';
+  let step=0,started=false,busy=false,attribution={},requestKey=crypto.randomUUID(),snapshot=null,parentOrigin='https://spectrarental.com';
   const channel="__SPECTRA_CHANNEL__";
   const event=(name,extra={})=>{const detail={event:name,...extra};document.dispatchEvent(new CustomEvent('spectra:analytics',{detail}));window.top.postMessage({type:'spectra:analytics',channel,detail},parentOrigin);};
   const resize=()=>window.top.postMessage({type:'spectra:height',channel,height:document.documentElement.scrollHeight},parentOrigin);
@@ -30,7 +30,7 @@
     if(typeof google==='undefined'||!google.script?.run){$('status').textContent='El registro automático todavía no está conectado. No se ha guardado esta solicitud.';resize();return;}
     busy=true;snapshot=v;$('send').disabled=true;$('back').disabled=true;$('status').textContent='Registrando solicitud…';event('form_submit');
     const unlock=()=>{busy=false;$('send').disabled=false;$('back').disabled=false;};
-    google.script.run.withSuccessHandler(response=>{unlock();if(!response?.ok||!/^SP-[0-9]{8}-[a-f0-9-]{36}$/i.test(response.id||'')){$('status').textContent=response?.message||'No se pudo confirmar el registro. Intenta de nuevo.';errors(response||{});resize();return;}$('steps').hidden=true;$('received').hidden=false;$('leadId').textContent=response.id;$('whatsapp').href=SpectraCRM.whatsapp(r.value,response.id);event('lead_created');$('received').focus();resize();}).withFailureHandler(()=>{unlock();$('status').textContent='No se pudo confirmar el registro. Reintenta con este mismo formulario para evitar duplicados.';event('form_error',{step:5});resize();}).submitLead(snapshot);
+    google.script.run.withSuccessHandler(response=>{unlock();if(!response?.ok||!/^SP-[0-9]{8}-[a-f0-9-]{36}$/i.test(response.id||'')||!/^S[A-Z]{2}-[0-9]{8}-[0-9]{3}$/.test(response.reference||'')){$('status').textContent=response?.message||'No se pudo confirmar el registro. Intenta de nuevo.';errors(response||{});resize();return;}$('steps').hidden=true;$('received').hidden=false;$('leadId').textContent=response.reference;$('whatsapp').href=SpectraCRM.whatsapp(r.value,response.reference);event('lead_created');$('received').focus();resize();}).withFailureHandler(()=>{unlock();$('status').textContent='No se pudo confirmar el registro. Reintenta con este mismo formulario para evitar duplicados.';event('form_error',{step:5});resize();}).submitLead(snapshot);
   });
   $('whatsapp').onclick=()=>event('whatsapp_click_after_lead');
   window.addEventListener('message',e=>{if(e.origin!==parentOrigin||e.source!==window.top||e.data?.type!=='spectra:init')return;attribution=e.data.attribution||{};if(!started&&SpectraCRM.services.includes(e.data.service))$('service').value=e.data.service;conditional();});
