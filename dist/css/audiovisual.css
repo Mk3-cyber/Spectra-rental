@@ -85,6 +85,14 @@
 .av-production-caption p { color:var(--muted); margin-bottom:1.2rem; }
 .av-contact-intro { display:flex; flex-wrap:wrap; gap:2rem 4rem; align-items:center; margin-block:2rem 4rem; }
 .av-contact-intro p { color:var(--muted); }
+.contact-kicker { margin:0 0 .35rem; color:#00bfff!important; font-size:.8rem; font-weight:700; letter-spacing:.12em; text-transform:uppercase; }
+.av-contact-channels { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:1px; margin:0 0 4rem; border:1px solid var(--border); background:var(--border); }
+.av-contact-channels a { display:grid; gap:.3rem; padding:1.25rem 1.4rem; background:#050505; text-decoration:none; min-width:0; }
+.av-contact-channels a:hover { background:#0a0a0d; }
+.av-contact-channels span { color:var(--muted); font-size:.78rem; letter-spacing:.08em; text-transform:uppercase; }
+.av-contact-channels strong { color:#fff; font-size:clamp(.95rem,1.8vw,1.15rem); overflow-wrap:anywhere; }
+.av-contact-channels a[href*="instagram"] strong,.av-contact-channels a[href*="facebook"] strong,.av-contact-channels a[href*="linkedin"] strong,.av-contact-channels a[href^="https://spectrarental.com"] strong { color:#2bb7ff; }
+.av-contact-terms { margin-top:3rem; }
 .av-contact-routes { scroll-margin-top:6rem; }
 .av-contact-routes nav { display:grid; margin-top:1.5rem; }
 .av-contact-routes nav a { display:flex; justify-content:space-between; gap:1.5rem; padding:1.2rem 0; border-top:1px solid var(--border); text-decoration:none; }
@@ -122,6 +130,6 @@
  .av-light-photo { min-height:380px; }.av-light-editorial { display:block; padding:1rem 16px; }.av-light-editorial article { padding:1.5rem 0; }.av-light-editorial article+article { border-top:1px solid var(--border); }
  .av-integrated-intro { display:grid; gap:1.5rem; }.av-map-rows>a { grid-template-columns:1fr; gap:.5rem; padding:1.3rem; }
  .av-integrated-production .av-photo { aspect-ratio:4/3; }
- .av-contact-routes nav a { flex-direction:column; gap:.4rem; }.av-contact-routes nav a span { font-size:.875rem; }
+ .av-contact-routes nav a { flex-direction:column; gap:.4rem; }.av-contact-routes nav a span { font-size:.875rem; }.av-contact-channels { grid-template-columns:minmax(0,1fr); margin-bottom:3rem; }
  .av-space .btn,.av-home-heading .btn { width:100%; text-align:center; }
 }
