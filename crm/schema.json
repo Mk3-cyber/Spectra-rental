@@ -53,7 +53,8 @@
     "Huella del envío",
     "Fecha tentativa",
     "Detalles técnicos",
-    "Mes de creación"
+    "Mes de creación",
+    "Referencia comercial"
   ],
   "states": [
     "NUEVO LEAD",
