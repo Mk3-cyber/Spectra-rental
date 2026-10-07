@@ -47,6 +47,6 @@ var SpectraCRM = (function () {
     }
     return {ok:Object.keys(errors).length===0,errors,value:v};
   }
-  function whatsapp(v,id){return 'https://wa.me/51920384374?text='+encodeURIComponent(`Hola, soy ${v.fullName}. Acabo de registrar una solicitud en Spectra Rental.\nServicio: ${v.service==='Otro'?v.serviceOther:v.service}\nTipo de evento: ${v.eventType==='Otro'?v.eventOther:v.eventType}\nFecha: ${v.eventDate}\nID de solicitud: ${id}\n\nSpectra Rental, unidad de negocios de Mentora International S.A.C.`);}
+  function whatsapp(v,reference){return 'https://wa.me/51920384374?text='+encodeURIComponent(`Hola, soy ${v.fullName}. Acabo de registrar una solicitud en Spectra Rental.\nServicio: ${v.service==='Otro'?v.serviceOther:v.service}\nTipo de evento: ${v.eventType==='Otro'?v.eventOther:v.eventType}\nFecha: ${v.eventDate}\nReferencia: ${reference}\n\nSpectra Rental, unidad de negocios de Mentora International S.A.C.`);}
   return {validate,today,whatsapp,clientTypes,services,institutions,events,roles,companyAreas,governmentAreas};
 })();
