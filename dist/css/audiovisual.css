@@ -326,3 +326,217 @@ body[data-page="contact"] .av-contact-terms { display:none!important; }
  .contact-secondary__grid { grid-template-columns:1fr; }
  .contact-secondary__grid a { padding:1rem; }
 }
+
+
+/* =========================================================
+   CONTACTO — FLUID PREMIUM OVERRIDES
+   Visual-only refinement scoped to contact page.
+========================================================= */
+body[data-page="contact"] .contact-premium{
+  padding:clamp(5rem,8vw,7rem) 0 clamp(1.5rem,3vw,2.5rem);
+}
+body[data-page="contact"] .contact-premium::before{
+  opacity:.28;
+  right:-13rem;
+  top:-15rem;
+}
+body[data-page="contact"] .contact-premium__hero{
+  gap:clamp(2.5rem,5vw,4.5rem);
+}
+body[data-page="contact"] .contact-premium__lead{
+  color:#b8bbc3;
+  line-height:1.85;
+}
+
+/* Process: softer surface, fewer dividers */
+body[data-page="contact"] .contact-premium__editorial-card{
+  border:1px solid rgba(255,255,255,.055);
+  border-radius:24px;
+  padding:1.9rem 1.75rem 1.6rem;
+  background:
+    radial-gradient(circle at 100% 0%,rgba(71,103,255,.09),transparent 34%),
+    linear-gradient(155deg,rgba(255,255,255,.035),rgba(255,255,255,.012));
+  box-shadow:0 28px 80px rgba(0,0,0,.22);
+  backdrop-filter:blur(8px);
+}
+body[data-page="contact"] .contact-premium__editorial-card::before{
+  left:0;
+  top:22px;
+  bottom:22px;
+  width:3px;
+  border-radius:999px;
+}
+body[data-page="contact"] .contact-premium__editorial-list{
+  gap:.5rem;
+}
+body[data-page="contact"] .contact-premium__editorial-list>div{
+  border-top:0;
+  padding:.8rem 0;
+}
+body[data-page="contact"] .contact-premium__editorial-list>div+div{
+  border-top:1px solid rgba(255,255,255,.045);
+}
+body[data-page="contact"] .contact-premium__editorial-note{
+  border-top:0;
+  margin-top:1rem;
+  padding:1rem 1.05rem;
+  border-radius:14px;
+  background:rgba(255,255,255,.018);
+}
+
+/* Form section: merge visually into page */
+body[data-page="contact"] .contact-capture{
+  position:relative;
+  padding:clamp(4rem,6vw,5.5rem) 0 clamp(4.5rem,7vw,6rem);
+}
+body[data-page="contact"] .contact-capture::before{
+  content:"";
+  position:absolute;
+  inset:7% auto auto 52%;
+  width:34rem;
+  height:34rem;
+  border-radius:50%;
+  background:radial-gradient(circle,rgba(25,107,255,.065),transparent 68%);
+  pointer-events:none;
+  transform:translateX(-10%);
+}
+body[data-page="contact"] .contact-capture__layout{
+  position:relative;
+  z-index:1;
+  gap:clamp(2.5rem,5vw,4.25rem);
+}
+body[data-page="contact"] .contact-capture__steps{
+  border:0;
+  gap:.65rem;
+}
+body[data-page="contact"] .contact-capture__steps>div{
+  border:0;
+  border-radius:16px;
+  padding:.95rem 1rem;
+  background:linear-gradient(135deg,rgba(255,255,255,.025),rgba(255,255,255,.008));
+  box-shadow:inset 0 0 0 1px rgba(255,255,255,.045);
+}
+body[data-page="contact"] .contact-capture__form{
+  border:0;
+  border-radius:28px;
+  background:#050506;
+  box-shadow:
+    0 30px 85px rgba(0,0,0,.28),
+    0 0 0 1px rgba(255,255,255,.05);
+}
+body[data-page="contact"] .contact-capture__form iframe{
+  border-radius:28px;
+}
+
+/* Secondary channels: no table look */
+body[data-page="contact"] .contact-secondary{
+  padding:0 0 clamp(4.5rem,7vw,6rem);
+}
+body[data-page="contact"] .contact-secondary>.container{
+  border:0;
+  padding-top:0;
+}
+body[data-page="contact"] .contact-secondary__head{
+  margin-bottom:1.75rem;
+}
+body[data-page="contact"] .contact-secondary__head>p:last-child{
+  color:#aeb1b8;
+  line-height:1.7;
+}
+body[data-page="contact"] .contact-secondary__grid{
+  border:0;
+  background:transparent;
+  gap:.8rem;
+}
+body[data-page="contact"] .contact-secondary__grid a,
+body[data-page="contact"] .contact-secondary__grid a+a{
+  border:0;
+  border-radius:18px;
+  padding:1.15rem 1.1rem;
+  background:linear-gradient(145deg,rgba(255,255,255,.025),rgba(255,255,255,.008));
+  box-shadow:inset 0 0 0 1px rgba(255,255,255,.045);
+  transition:transform .18s ease,background .18s ease,box-shadow .18s ease;
+}
+body[data-page="contact"] .contact-secondary__grid a:hover{
+  transform:translateY(-3px);
+  background:linear-gradient(145deg,rgba(28,81,150,.16),rgba(255,255,255,.012));
+  box-shadow:inset 0 0 0 1px rgba(91,169,255,.15),0 12px 34px rgba(0,0,0,.16);
+}
+
+/* Services: cards instead of grid cells */
+body[data-page="contact"] .contact-services{
+  position:relative;
+  background:
+    radial-gradient(circle at 18% 12%,rgba(57,74,210,.05),transparent 30%),
+    linear-gradient(180deg,#030303,#07080b);
+}
+body[data-page="contact"] .contact-services__grid{
+  border:0;
+  gap:1rem;
+}
+body[data-page="contact"] .contact-services__grid a,
+body[data-page="contact"] .contact-services__grid a:first-child{
+  border:0;
+  border-radius:20px;
+  min-height:225px;
+  padding:1.4rem 1.3rem;
+  background:linear-gradient(160deg,rgba(255,255,255,.026),rgba(255,255,255,.008));
+  box-shadow:inset 0 0 0 1px rgba(255,255,255,.048);
+}
+body[data-page="contact"] .contact-services__grid a:hover{
+  transform:translateY(-4px);
+  background:linear-gradient(160deg,rgba(23,57,104,.2),rgba(255,255,255,.01));
+  box-shadow:inset 0 0 0 1px rgba(91,169,255,.16),0 14px 36px rgba(0,0,0,.18);
+}
+
+/* Commercial terms: soft capsules, no hard separators */
+body[data-page="contact"] .contact-commercial__facts{
+  border:0;
+  gap:.8rem;
+}
+body[data-page="contact"] .contact-commercial__facts div,
+body[data-page="contact"] .contact-commercial__facts div+div{
+  border:0;
+  border-radius:16px;
+  padding:1.05rem 1rem;
+  background:linear-gradient(145deg,rgba(255,255,255,.023),rgba(255,255,255,.008));
+  box-shadow:inset 0 0 0 1px rgba(255,255,255,.045);
+}
+
+/* Responsive */
+@media(max-width:1100px){
+  body[data-page="contact"] .contact-secondary__grid,
+  body[data-page="contact"] .contact-services__grid{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+}
+@media(max-width:980px){
+  body[data-page="contact"] .contact-premium__hero{
+    grid-template-columns:1fr;
+  }
+  body[data-page="contact"] .contact-premium__editorial{
+    max-width:680px;
+  }
+  body[data-page="contact"] .contact-capture__steps{
+    grid-template-columns:1fr;
+  }
+  body[data-page="contact"] .contact-capture__steps>div,
+  body[data-page="contact"] .contact-capture__steps>div+div{
+    border:0;
+  }
+}
+@media(max-width:700px){
+  body[data-page="contact"] .contact-secondary__grid,
+  body[data-page="contact"] .contact-services__grid,
+  body[data-page="contact"] .contact-commercial__facts{
+    grid-template-columns:1fr;
+  }
+  body[data-page="contact"] .contact-premium__editorial-card,
+  body[data-page="contact"] .contact-capture__form,
+  body[data-page="contact"] .contact-capture__form iframe{
+    border-radius:20px;
+  }
+  body[data-page="contact"] .contact-services__grid a{
+    min-height:0;
+  }
+}
