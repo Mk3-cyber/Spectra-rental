@@ -14,10 +14,16 @@ var SpectraCRM = (function () {
     const choice=(k,choices)=>{const x=text(k);if(!choices.includes(x))errors[k]='Selecciona una opción.';return x;};
     choice('clientType',clientTypes);text('fullName',3,140);if(!/\p{L}.*\s+.*\p{L}/u.test(v.fullName))errors.fullName='Escribe tu nombre y apellido.';
     if(v.clientType==='Empresa'||v.clientType===clientTypes[2]){
-      text('organization',2,200);text('ruc',11,11);
-      if(v.clientType==='Empresa'){choice('role',roles);if(v.role==='Otro')text('roleOther',2,120);}else text('role',2,120);
+      text('organization',2,200);
+      if(v.clientType==='Empresa'){
+        text('ruc',11,11);
+        if(!/^(10|20)\d{9}$/.test(v.ruc)||input.ruc!==v.ruc)errors.ruc='Ingresa 11 números, sin espacios, comenzando por 10 o 20.';
+        choice('role',roles);if(v.role==='Otro')text('roleOther',2,120);
+      }else{
+        v.ruc='';
+        text('role',2,120);
+      }
       choice('area',v.clientType==='Empresa'?companyAreas:governmentAreas);if(v.area==='Otra')text('areaOther',2,120);
-      if(!/^(10|20)\d{9}$/.test(v.ruc)||input.ruc!==v.ruc)errors.ruc='Ingresa 11 números, sin espacios, comenzando por 10 o 20.';
       if(v.clientType===clientTypes[2]){choice('institutionType',institutions);if(v.institutionType==='Otra entidad pública')text('institutionOther',2,120);}
     }else if(v.clientType==='Persona natural'){
       choice('documentType',['DNI','C.E.']);text('documentNumber',1,20);
