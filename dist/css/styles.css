@@ -333,3 +333,199 @@ body[data-page="about"] .page-hero h1,body[data-page="contact"] .page-hero h1{fo
 
 /* CRM lead capture */
 [data-crm-mount]{min-width:0;scroll-margin-top:110px;width:100%}body[data-page="quote"] .quote-layout{grid-template-columns:minmax(0,1fr);max-width:960px;margin-inline:auto}body[data-page="quote"] .quote-aside{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem}@media(max-width:768px){body[data-page="quote"] .quote-aside{grid-template-columns:minmax(0,1fr)}}
+
+
+/* =========================================================
+   GLOBAL FOOTER — PREMIUM REFINEMENT
+========================================================= */
+.site-footer{
+  position:relative;
+  padding:3.25rem 0 1.35rem;
+  background:
+    radial-gradient(circle at 12% 0%,rgba(45,78,180,.07),transparent 30%),
+    linear-gradient(180deg,#020202 0%,#050506 100%);
+  border-top:1px solid rgba(255,255,255,.05);
+}
+.site-footer::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  background:linear-gradient(180deg,rgba(255,255,255,.012),transparent 18%);
+}
+.site-footer .container{position:relative;z-index:1}
+
+.footer-grid{
+  display:grid;
+  grid-template-columns:minmax(0,1.02fr) minmax(0,.76fr) minmax(0,.72fr);
+  gap:2.25rem;
+  align-items:start;
+}
+.footer-brand{
+  width:8.6rem;
+  height:auto;
+  overflow:visible;
+  margin-bottom:.9rem;
+}
+.footer-brand img{
+  width:100%;
+  height:auto;
+  object-fit:contain;
+  display:block;
+}
+.footer-copy{
+  color:#a9adb6;
+  max-width:25rem;
+  margin-top:.8rem;
+  line-height:1.72;
+  font-size:.98rem;
+}
+.footer-title{
+  margin:0 0 .95rem;
+  color:#fff;
+  font:800 .88rem/1.2 Montserrat,sans-serif;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+}
+.text-link{
+  display:inline-flex;
+  min-height:auto;
+  align-items:center;
+  margin:0 0 .7rem;
+  color:#69b7ff!important;
+  font-weight:700;
+}
+.footer-links{
+  display:grid;
+  gap:.38rem;
+}
+.corporate-footer nav a,
+.footer-links a{
+  min-height:auto;
+}
+.footer-links a,
+.footer-links span{
+  display:block;
+  line-height:1.5;
+  font-size:.96rem;
+}
+.footer-links a{
+  color:#b9bdc6;
+  transition:color .18s ease,transform .18s ease;
+}
+.footer-links a:hover{
+  color:#7cbcff;
+  transform:translateX(2px);
+}
+.footer-links span{
+  color:#8f949e;
+}
+.footer-grid>div:last-child .footer-links{
+  gap:.55rem;
+}
+.footer-grid>div:last-child .footer-links a[href^="tel:"]{
+  color:#f5f7fb;
+  font-size:1.08rem;
+  font-weight:700;
+}
+.footer-grid>div:last-child .footer-links a[href^="mailto:"]{
+  overflow-wrap:anywhere;
+}
+.footer-grid>div:last-child .footer-links span:nth-last-child(2),
+.footer-grid>div:last-child .footer-links span:last-child{
+  color:#e8eaf0;
+  font-weight:600;
+}
+
+.corporate-footer{
+  margin-top:2rem;
+  padding-top:1.15rem;
+  border-top:1px solid rgba(255,255,255,.05);
+  display:grid;
+  gap:.6rem;
+}
+.corporate-footer p{
+  margin:0;
+  max-width:88ch;
+  color:#7f848e;
+  line-height:1.65;
+  font-size:.86rem;
+}
+.corporate-footer nav{
+  display:flex;
+  flex-wrap:wrap;
+  gap:.55rem 1.1rem;
+  margin-top:.1rem;
+}
+.corporate-footer nav a{
+  color:#aeb2bc;
+  font-size:.86rem;
+}
+.corporate-footer nav a:hover{
+  color:#7cbcff;
+}
+
+.footer-bottom{
+  margin-top:1rem;
+  padding-top:.85rem;
+  border-top:1px solid rgba(255,255,255,.045);
+  display:flex;
+  justify-content:space-between;
+  gap:1rem;
+  flex-wrap:wrap;
+  color:#6f747d;
+  font-size:.8rem;
+}
+.footer-bottom span{
+  color:#6f747d;
+  line-height:1.45;
+}
+
+@media(max-width:980px){
+  .footer-grid{
+    grid-template-columns:1fr 1fr;
+    gap:2rem;
+  }
+  .footer-grid>:first-child{
+    grid-column:1/-1;
+  }
+  .footer-copy{
+    max-width:34rem;
+  }
+}
+@media(max-width:680px){
+  .site-footer{
+    padding:2.75rem 0 1.15rem;
+  }
+  .footer-grid{
+    grid-template-columns:1fr;
+    gap:1.65rem;
+  }
+  .footer-grid>:first-child{
+    grid-column:auto;
+  }
+  .footer-brand{
+    width:7.8rem;
+  }
+  .footer-copy{
+    max-width:100%;
+    font-size:.94rem;
+  }
+  .footer-title{
+    margin-bottom:.75rem;
+  }
+  .footer-links{
+    gap:.32rem;
+  }
+  .corporate-footer{
+    margin-top:1.5rem;
+    padding-top:1rem;
+  }
+  .footer-bottom{
+    margin-top:.85rem;
+    padding-top:.75rem;
+    flex-direction:column;
+    align-items:flex-start;
+    gap:.35rem;
+  }
+}
