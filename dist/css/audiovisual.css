@@ -493,6 +493,7 @@ body[data-page="contact"] .contact-services__grid a:hover{
 body[data-page="contact"] .contact-commercial__facts{
   border:0;
   gap:.8rem;
+  grid-template-columns:repeat(2,minmax(0,1fr));
 }
 body[data-page="contact"] .contact-commercial__facts div,
 body[data-page="contact"] .contact-commercial__facts div+div{
