@@ -113,7 +113,7 @@
       const invalidStep = steps.findIndex(panel => [...panel.querySelectorAll('[required]')].some(field => !field.checkValidity() || !field.value.trim()));
       if (invalidStep !== -1) { showStep(invalidStep); validateStep(); return; }
       const lines = ['Hola, deseo cotizar pantallas LED P2.9 / P3.9 para un evento.', '', 'Spectra Rental, unidad de negocios de Mentora International S.A.C., identificada con RUC N.° 20614487268.', '', ...[...form.querySelectorAll('[name]')].map(field => `${field.dataset.label}: ${field.value}`), '', 'Condiciones: precios sin IGV; se añade 18%. Pago: 50% de adelanto y 50% antes del evento.'];
-      const url = `https://wa.me/51920384374?text=${encodeURIComponent(lines.join('\n'))}`;
+      const url = `https://wa.me/51902558540?text=${encodeURIComponent(lines.join('\n'))}`;
       status.classList.add('show');
       status.replaceChildren();
       const title = document.createElement('h3'); title.textContent = 'Revisa tu solicitud'; title.tabIndex = -1;
@@ -138,7 +138,7 @@
     const blank = [...adForm.querySelectorAll('[name]')].find(field => !field.value.trim());
     if (blank) { blank.setCustomValidity('Completa este campo.'); blank.reportValidity(); blank.addEventListener('input', () => blank.setCustomValidity(''), {once:true}); return; }
     const lines = ['Hola, deseo cotizar minutos publicitarios en el Estadio Monumental.', '', 'Spectra Rental, unidad de negocios de Mentora International S.A.C., identificada con RUC N.° 20614487268.', '', ...[...adForm.querySelectorAll('[name]')].map(field => `${field.dataset.label}: ${field.value}`), '', 'Precios sin IGV; se añade 18%. Pago: 50% de adelanto y 50% antes del evento.'];
-    const url = `https://wa.me/51920384374?text=${encodeURIComponent(lines.join('\n'))}`;
+    const url = `https://wa.me/51902558540?text=${encodeURIComponent(lines.join('\n'))}`;
     const status = adForm.querySelector('.status-message');
     status.classList.add('show');
     status.textContent = 'Tu solicitud está lista. ';
